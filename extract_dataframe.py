@@ -6,6 +6,7 @@ def read_json(json_file: str)->list:
     """
     json file reader to open and read json files into a list
     Args:
+    
     -----
     json_file: str - path of a json file
     
@@ -13,7 +14,11 @@ def read_json(json_file: str)->list:
     -------
     length of the json file and a list of json
     """
-    
+    df= json.read(json_file)
+    with open('path_to file/json_file') as f
+        data  json.load(f)
+    print(df)
+ 
     tweets_data = []
     for tweets in open(json_file,'r'):
         tweets_data.append(json.loads(tweets))
